@@ -1,0 +1,5 @@
+After installing mongodb on the system run the following in cmd
+ mongod.exe --storageEngine=mmapv1 --dbpath "C:\mongodb\data"
+ above will start the engine 
+ mongo.exe
+ above will start the mongodb console

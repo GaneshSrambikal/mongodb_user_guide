@@ -28,10 +28,46 @@ unique _id fields?
 _id field is a 12 bytes hexadecimal number which assures the uniqueness
 of every document.
 _id can also be inserted manually.
-first 4 bytes is for timestamp
-next 3 bytes is for machine _id
-next 2 bytes is for process _id
-next 3 bytes is for increment
+first 4 bytes is for timestamp,
+next 3 bytes is for machine _id,
+next 2 bytes is for process _id,
+next 3 bytes is for increment.
 
+Advantages of using MongoDB
+* any relational database has typical schema design that shows
+number of tables and the relationship between these tables.
+while in mongodb there is no such concept of relationship.
+
+*mongoDb is schema-less-
+documents in mongodb have a dynamic schema, that means it can differ
+from one document to other. 
+
+*No complex joins.
+
+* structure of object is clear.
+
+*Deep query-ability. - mongodb supports dynamic queries on documents
+using document-based query language that's nearly as powerful as 
+SQL.
+*ease of scalability - is easy to scale
+
+* mapping of application object with database object is not needed.
+
+Why to MongoDB?
+Data is stored in the form of JSON styled document.so it easy tored
+and retrieve data.
+index on attribute
+Replication and high avalability
+auto-sharding
+rich queries
+fast in-place update
+proffesional support.
+
+where to use mongodb?
+Big data
+CMS
+User data management
+data hub
+mobile and social infrastructure
 
 
