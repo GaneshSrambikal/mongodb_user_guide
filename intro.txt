@@ -1,0 +1,37 @@
+What is MongoDB?
+MongoDB is an open-source and NoSql database.
+Its written in c++.
+MongoDB is class-platform document oriented database that provides
+* high performance
+*easy scalability
+*high avalability
+Its works on the concepts of document and collection.
+
+What's database?
+database is a physical container for collection.
+each databse gets its own set of files on the file system.
+a single MongoDB server typically has multiple databases.
+
+What's Collection?
+Collection a group of documents.
+Collection is similar to that of table in rdbms.
+Collection exist within a database.
+Collection does notenforce a schema.
+
+What's document?
+document is set of key-value pairs.
+documents have dynamic schema, means the documents in the same 
+collection do not need to have the same fields and structures.
+all document in the collection are the similaror related purpose.
+
+unique _id fields?
+_id field is a 12 bytes hexadecimal number which assures the uniqueness
+of every document.
+_id can also be inserted manually.
+first 4 bytes is for timestamp
+next 3 bytes is for machine _id
+next 2 bytes is for process _id
+next 3 bytes is for increment
+
+
+
