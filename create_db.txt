@@ -1,0 +1,22 @@
+to create a database in mongodb we use the 'use' command.
+* syntax for use command *
+use database name
+
+ex. use demo
+The use command will create an database called demo.
+if the demo database exist it will return the existing db.
+
+to see how many db exists use the following cammand:
+show dbs.
+this will show all the existing db .
+
+Now you will notice that the db demo is not in the list,
+for that we need to insert atleast one document
+ex. 
+db.info.insert({"name":"Doe"})
+the key value pairs will be stored in the info document.
+
+To delete a database use the following command
+* db.dropDatabase() *
+
+

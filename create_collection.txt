@@ -1,0 +1,13 @@
+To create coolection in database 'createCollection' is used.
+syntax
+db.createCollection("collection_name")
+
+To see the collections in db 'show collection' is used.
+syntax
+show collections
+
+mongodb automatically creates collections when you use
+ex.
+db.movie.insert({"rating":4.5})
+
+Here movie is the collection to which the value rating will be inserted.
