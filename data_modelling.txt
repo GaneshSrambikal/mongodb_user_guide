@@ -1,3 +1,31 @@
+In mongoDB data has a flexible schema.documents in the same collection.
+they do not neeed to have the same set of structure and fields 
+and do not need to have same set of data.
+
+**Note to be considered while desigining a schema in mongoDB
+
+1.Design and optimize schema according to the users requirement.
+
+2.Do joins whike write but not on read.
+
+3.Do complex aggregation in the schema.
+
+4.combine objects into one document if you will use then together.
+
+5. Duplicates the data because disk space is cheap as ascampare to 
+    compute time.
+
+Takes an example of post in a blog,where 
+* every post has an unique id ,title 
+* every post can have multiple tags.
+* on each posts there can be no or manylikes and comments.
+
+Here is an example how rdbms would look like,
+where there are three tables post ,comment and tag_list.
+the post table has 1 to many (1N) relationship ,with tag list and comment
+
+COMMENT N----1 POST 1----N tag list
+
 -----------------   ---------------    ---------------- 
 COMMENT             POST                tag_list  
 -----------------   ---------------    ----------------
@@ -7,3 +35,29 @@ by_user             description         tag
 body                url
 timestamp           likes
 likes               post_by
+
+
+In mongoDB all this will be store in one collection!.
+{
+    _id: POST_ID
+   title: TITLE_OF_POST, 
+   description: POST_DESCRIPTION,
+   by: POST_BY,
+   url: URL_OF_POST,
+   tags: [TAG1, TAG2, TAG3],
+   likes: TOTAL_LIKES, 
+   comments: [	
+      {
+         user:'COMMENT_BY',
+         message: TEXT,
+         dateCreated: DATE_TIME,
+         like: LIKES 
+      },
+      {
+         user:'COMMENT_BY',
+         message: TEXT,
+         dateCreated: DATE_TIME,
+         like: LIKES
+      }
+   ]
+} 
