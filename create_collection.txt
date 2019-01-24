@@ -11,3 +11,8 @@ ex.
 db.movie.insert({"rating":4.5})
 
 Here movie is the collection to which the value rating will be inserted.
+
+tO DROP THE COLLECTION use 
+db.collection_name.drop()
+it will return an true if its drop
+else false if it doesnt exist.
