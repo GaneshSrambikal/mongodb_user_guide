@@ -1,0 +1,9 @@
+-----------------   ---------------    ---------------- 
+COMMENT             POST                tag_list  
+-----------------   ---------------    ----------------
+comment_id          id                  id
+post_id             title               post_id
+by_user             description         tag
+body                url
+timestamp           likes
+likes               post_by
