@@ -1,0 +1,46 @@
+Querys are used to fetch data from db.
+The find() Method is used to query data from collection in mongodb.
+syntax 
+db.collection_name.find()
+
+example
+db.movies.find()
+
+The find() method will return data in non.structured way.
+to make it formatted pretty() method is used 
+syntax
+db.collection_name.find().pretty()
+
+findOne() method will return one document.
+Although similar to the find() method,
+the findOne() method returns a document rather than a cursor.
+
+Where clause in mongodb:
+Equality( = )
+{key : value}
+
+less than( < )
+{ key : {$lt:value} }
+
+less than equal( <= )
+{ key : {$lte:value} }
+
+greater than( > )
+{ key : {$gt:value} }
+
+greater than equal( >= )
+{ key : {$gte:value} }
+
+not equal( != )
+{ key : {$ne:value} }
+
+the AND clause(&&) in mongodb
+syntax
+{ $and:[ {key:value},{key,value} ] }
+
+the Or clause(||) in mongodb
+syntax
+{ $or:[ {key:value},{key:value} ] }
+
+
+
