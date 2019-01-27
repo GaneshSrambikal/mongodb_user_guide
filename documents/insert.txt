@@ -1,0 +1,21 @@
+The Insert() Method in MongoDb is used to insert data into the 
+mongodb collection.
+Syntax:
+db.collection.insert(document)
+
+example
+db.movies.insert({ratings:4.5})
+
+movies is the collection, if it doesnt exist mongodb will create 
+the collection called movies and then insert the document into it.
+
+If _id is not define in the document mongodb will insert it 
+the _id consist of ObjectId followed by 12 bytes number :-
+4 bytes  - timestamp
+3 bytes  - Machine ID 
+2 bytes  - Process ID
+3 bytes  - increment  
+
+save() method is also similar to insert().
+
+
