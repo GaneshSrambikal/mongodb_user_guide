@@ -1,0 +1,15 @@
+Besides standard data-types , in mongodb there some other data-types
+which supports.
+Arrays - Its used to store array and list or multiple values into one keys.
+
+Timestamp - ctimestamp. Its used for storing timestamp .
+
+Objects - Used for embedded documents.
+
+Symbol - Its used by languages that use a specific symbol type.
+
+Object Id  - to store document id.
+
+code  - to store javascript code into doument.
+
+Regular Expression - stores regular expressions.
