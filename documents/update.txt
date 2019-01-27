@@ -1,0 +1,13 @@
+To update a document in mongodb update() method is used.
+syntax
+db.collection_name.update(CRITERIA,updated data)
+
+to update multiple documents use  :{multi:true}
+syntax
+db.collection.update({CRITERIA,updated data},{multi:true})
+
+A update method will only update the targeted document
+
+A save() method will replace th existing document with the 
+document passed in the save() method.
+
