@@ -1,0 +1,5 @@
+What is a Document?
+A document is a set of key-value pairs.
+Document hava dynamics schema.
+document in the same collection do not need to be same throughput 
+the collection.
