@@ -1,0 +1,9 @@
+To delete a document from collection ,remove method is used.
+syntax
+db.collection_name.remove(DELETE CRITERIA)
+
+to remove only one document use 
+db.col_name.remove(DELETE CRITERIA,1)
+
+TO REMOVE all 
+db.col.remove()
