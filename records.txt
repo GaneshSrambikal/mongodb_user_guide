@@ -1,3 +1,4 @@
+** Limit() **
 A  limit() method it used to limit the records to be showen from the documents.
 It takes only one argument as a number limit(NUMBER).
 the number here is the no. of documents to be shown.
@@ -7,10 +8,23 @@ db.collection.find({"likes":{$gt:50}}).limit(3)
  the query uses limit method which will show 3 documents with kikes grater
  than 50 .
 
+** Skip() **
  A skip() method is used to skip the number of documents.
  it takes only one argument as number -skip(NUMBER).
+
  for example
  db.colle_name.find({"likes":{$gt:50}}).skip(2)
   the query will skip to first to documents from the return projection.
   
 
+** sort() **
+A sort() method is used to sort a documents.
+the method accepts a document containing a list of fields along wih ther sorting orders.
+syntax
+db.col.find({query,projection}).sort({KEY:1 / -1})
+1 is used to sort in ascending order.
+-1 is used to sort in descending order.
+
+for example
+db.col.find().sort({"name":-1})
+the query will sort the document in descending orders.
