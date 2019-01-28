@@ -1,0 +1,21 @@
+A Projection parameter selects only the fields/data which is 
+needed from the document instead of selecting the whole document.
+ 
+ which simply means the projection parameter determines which fields are returned in the 
+ matching documents.
+  The projection parameter takes a document of the following
+  form:
+  { key : value }
+  where - key is the field from the document to match.
+    and value includes number which 1 or 0 (true or false).
+    1 -include the field in the return document .
+    0 -excluding the field
+
+A  projection cannot contain both include and exclude specfication.
+
+NOTE: for the _id field, we do not need to explicitly specify 
+_id: 1 , the find() method returns _id field unless its specified _id :0 .
+ 
+ Example :
+ db.collection_name.find({"title":1,"description":1,_id:0})
+ 
