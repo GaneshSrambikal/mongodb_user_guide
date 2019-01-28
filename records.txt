@@ -6,4 +6,11 @@ for example
 db.collection.find({"likes":{$gt:50}}).limit(3)
  the query uses limit method which will show 3 documents with kikes grater
  than 50 .
- 
+
+ A skip() method is used to skip the number of documents.
+ it takes only one argument as number -skip(NUMBER).
+ for example
+ db.colle_name.find({"likes":{$gt:50}}).skip(2)
+  the query will skip to first to documents from the return projection.
+  
+
