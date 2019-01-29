@@ -1,0 +1,28 @@
+* Mongodb indexes are efficient in execution of queries.
+
+* Using Indexes mongodb it limits the number documents to be scanned or insecpt,
+  that means it do not need to scan the whole document for the specified projection.
+
+* Indexes are special data structures that store a small portion of document data set in a 
+  ease-to-traverse form. 
+
+* To create an Index in mongodb use syntax
+  db.collection.createIndex({key: 1 / -1}, options)
+  here the key is any field from the collection and numbers 1 and -1 are order in which index will be sorted.
+  1 is from ascending and -1 is for descending.
+  for example:
+  db.collection.createIndex({name:1})
+
+* To create in node.js
+  collection.createIndex({key:1/-1},function(err,result){
+      callback result;
+  });
+  for example:
+  collection.createIndex({address:1},function(err,result){
+      callback result;
+  });
+
+* Mongodb indexes uses B-tree data structures.
+
+* Mongodb indexes are same as other database system indexes.
+
