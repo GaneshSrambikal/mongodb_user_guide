@@ -12,17 +12,7 @@ FOR EXAMPLE from a document we need to display how many courses does each tutor 
 db.tutor.aggregate([{$group :{_id:$by_tutor,num_ofcourse:{$sum:1}}])
 
 result will be.
-{
-   "result" : [
-      {
-         "_id" : "David",
-         "num_ofcourse" : 2
-      },
-      {
-         "_id" : "Doe",
-         "num_ofcourse" : 1
-      }
-   ],
-   "ok" : 1
-}
+{ "_id" : "Austin", "num_of_courses" : 1 }
+{ "_id" : "David", "num_of_courses" : 3 }
+{ "_id" : "John", "num_of_courses" : 1 }
 >
