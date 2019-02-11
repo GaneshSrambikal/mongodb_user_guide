@@ -3,7 +3,7 @@ Aggregation groups the values from mutliple documents together and can
 perform a variety of operations on the grouped data to return a single result.
 Aggregation is equivalent of sql count(*) and group by.
 
-to use Aggregation we aggregate()
+to use Aggregation we use aggregate() method.
 syntax
 db.collection.aggregate(AGGREGATE OPERATION)
 
@@ -16,3 +16,21 @@ result will be.
 { "_id" : "David", "num_of_courses" : 3 }
 { "_id" : "John", "num_of_courses" : 1 }
 >
+* some of the Aggregation expression are:
+$min - returns the minimum of the corresponding values from all the document in the collection.
+$max - returns the maximum of the corresponding values from all the document in the collection.
+$push - used to insert a value to an array in the resulting document.
+$addToSet - does the same as the push but does not create the duplicates.
+$first - returns the first document from the projected document.
+$last - returns the last document from the projected document.
+
+MongoDB also supports pipeline frameworks.
+A Pipeline basically executes an operation on the given input and use the output of the input to the next input.
+
+some of the Aggregation frameworks pipeline stages:
+$project - Used to select fields from the collections.
+$match - It filters the documents and reduces the amount of inputs that are passed to the next stages.
+$group - This does the Aggregation
+$sort -sort the documents.
+$skip - skip the number of the documents from the list of document in the collection.
+$limjt - limits the documents 

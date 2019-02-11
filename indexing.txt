@@ -1,6 +1,6 @@
 * Mongodb indexes are efficient in execution of queries.
 
-* Using Indexes mongodb it limits the number documents to be scanned or insecpt,
+* Using Indexes mongodb it limits the number documents to be scanned or inspect,
   that means it do not need to scan the whole document for the specified projection.
 
 * Indexes are special data structures that store a small portion of document data set in a 
