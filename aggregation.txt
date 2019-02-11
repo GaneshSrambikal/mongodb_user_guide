@@ -33,4 +33,4 @@ $match - It filters the documents and reduces the amount of inputs that are pass
 $group - This does the Aggregation
 $sort -sort the documents.
 $skip - skip the number of the documents from the list of document in the collection.
-$limjt - limits the documents 
+$limit - limits the documents.
